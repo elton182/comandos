@@ -8,3 +8,5 @@ Alguns comandos úteis
   ```ln -s /path/to/file /path/to/symlink ```
 3. importar csv no mysql
   ``` mysqlimport --ignore-lines=1  --fields-terminated-by=; --debug --delete --default-character-set="utf8" --local -u root -p Database tablename.csv ```
+4. criar banco com utf8 general_ci 
+  ``` CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci; ```
