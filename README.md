@@ -10,3 +10,7 @@ Alguns comandos úteis
   ``` mysqlimport --ignore-lines=1  --fields-terminated-by=; --debug --delete --default-character-set="utf8" --local -u root -p Database tablename.csv ```
 4. criar banco com utf8 general_ci 
   ``` CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci; ```
+5. backup postgres
+  ``` pg_dump -E UTF8 -i -U <usuario> -F c -b -v -f <arquivo> <banco> ```
+6. restore postgres
+  ``` pg_restore -C -d <Banco> -U <usuario> <arquivo> ```
